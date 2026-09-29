@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Source</title>
+</head>
+
+  <body>
+    <p> 
+        Did you think there would be darkness forever?<br>
+        I am you! you are me!<br>
+        Welcome. <br><br>
+    </p>
+    <img src="../../images/jpg/Planets_in_the_Making.jpg" width="250" alt="Giant White Hole"><br><br>
+        <p> 
+        If all goes right, I will be a body of activity.<br>
+        I will host rocks, water, creatures, and Life.<br>
+        I will be their shelter, and they will be my progeny.<br><br>
+    </p>
+    <a href="planetary_disk.html">Planetary Disk</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Nebula</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Star</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </body>
+
+  </html>

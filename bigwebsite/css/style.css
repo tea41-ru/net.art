@@ -1,0 +1,37 @@
+body {
+    min-height:7500px;
+    min-width: 7500px;
+    overflow:auto;
+}
+
+.ancestor {
+    position:relative;
+    width:100%;  
+}
+
+.promise {
+    font-family:cursive;
+    font-style:normal;
+    font-size:25px;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+    text-decoration:solid;
+    text-align:left;
+    border: 50px solid #3b1e02;
+    width:6100px;
+    height:3600px;
+    margin:500px;
+    padding:100px;
+    opacity:1;
+}
+
+#safeguard {
+    color: #d60a0a;
+}
+
+#the_writer {   
+    position:absolute;
+    bottom:-515px;
+    right:0px;
+}

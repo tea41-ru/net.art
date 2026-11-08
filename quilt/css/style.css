@@ -1,0 +1,411 @@
+* { 
+  margin: 0;  
+}
+
+#header {
+  text-align: center;
+  padding-top: 100px;
+  background-color: darkgreen;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  gap: 20px;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 100px;
+  background-color: darkgreen;
+}
+
+.grid-item {
+  border: 1px solid darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: darkgreen;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+  background-color: greenyellow;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.item1 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/English_pattern_ace_of_spades.svg/1920px-English_pattern_ace_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/English_pattern_ace_of_diamonds.svg/1920px-English_pattern_ace_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/English_pattern_ace_of_clubs.svg/1920px-English_pattern_ace_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.item4 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/English_pattern_ace_of_hearts.svg/1920px-English_pattern_ace_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/English_pattern_2_of_spades.svg/1920px-English_pattern_2_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.item6 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/English_pattern_2_of_diamonds.svg/1920px-English_pattern_2_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item7 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/English_pattern_2_of_clubs.svg/1920px-English_pattern_2_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item8 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/English_pattern_2_of_hearts.svg/1920px-English_pattern_2_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item9 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/English_pattern_3_of_spades.svg/1920px-English_pattern_3_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item10 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/English_pattern_3_of_diamonds.svg/1920px-English_pattern_3_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.item11 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/English_pattern_3_of_clubs.svg/1920px-English_pattern_3_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item12 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/English_pattern_3_of_hearts.svg/1920px-English_pattern_3_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item13 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/English_pattern_4_of_spades.svg/1920px-English_pattern_4_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item14 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/English_pattern_4_of_diamonds.svg/1920px-English_pattern_4_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item15 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/English_pattern_4_of_clubs.svg/1920px-English_pattern_4_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item16 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/English_pattern_4_of_hearts.svg/1920px-English_pattern_4_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item17 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/English_pattern_5_of_spades.svg/1920px-English_pattern_5_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item18 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/English_pattern_5_of_diamonds.svg/1920px-English_pattern_5_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item19 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/English_pattern_5_of_clubs.svg/1920px-English_pattern_5_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item20 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/English_pattern_5_of_hearts.svg/1920px-English_pattern_5_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item21 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/English_pattern_6_of_spades.svg/1920px-English_pattern_6_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item22 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/English_pattern_6_of_diamonds.svg/1920px-English_pattern_6_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item23 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/English_pattern_6_of_clubs.svg/1920px-English_pattern_6_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item24 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/English_pattern_6_of_hearts.svg/1920px-English_pattern_6_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item25 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/English_pattern_7_of_spades.svg/1920px-English_pattern_7_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item26 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/English_pattern_7_of_diamonds.svg/1920px-English_pattern_7_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item27 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/English_pattern_7_of_clubs.svg/1920px-English_pattern_7_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item28 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/English_pattern_7_of_hearts.svg/1920px-English_pattern_7_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item29 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/English_pattern_8_of_spades.svg/1920px-English_pattern_8_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item30 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/English_pattern_8_of_diamonds.svg/1920px-English_pattern_8_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item31 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/English_pattern_8_of_clubs.svg/1920px-English_pattern_8_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item32 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/English_pattern_8_of_hearts.svg/1920px-English_pattern_8_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item33 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/English_pattern_9_of_spades.svg/1920px-English_pattern_9_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item34 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/English_pattern_9_of_diamonds.svg/1920px-English_pattern_9_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item35 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/English_pattern_9_of_clubs.svg/1920px-English_pattern_9_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item36 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/English_pattern_9_of_hearts.svg/1920px-English_pattern_9_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item37 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/English_pattern_10_of_spades.svg/1920px-English_pattern_10_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item38 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/English_pattern_10_of_diamonds.svg/1920px-English_pattern_10_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item39 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/English_pattern_10_of_clubs.svg/1920px-English_pattern_10_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item40 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/English_pattern_10_of_hearts.svg/1920px-English_pattern_10_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item41 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/English_pattern_jack_of_spades.svg/1920px-English_pattern_jack_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item42 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/English_pattern_jack_of_diamonds.svg/1920px-English_pattern_jack_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item43 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/English_pattern_jack_of_clubs.svg/1920px-English_pattern_jack_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item44 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/English_pattern_jack_of_hearts.svg/1920px-English_pattern_jack_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item45 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/English_pattern_queen_of_spades.svg/1920px-English_pattern_queen_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item46 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/English_pattern_queen_of_diamonds.svg/1920px-English_pattern_queen_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item47 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/English_pattern_queen_of_clubs.svg/1920px-English_pattern_queen_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item48 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/English_pattern_queen_of_hearts.svg/1920px-English_pattern_queen_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item49 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/English_pattern_king_of_spades.svg/1920px-English_pattern_king_of_spades.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item50 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/English_pattern_king_of_diamonds.svg/1920px-English_pattern_king_of_diamonds.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item51 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/English_pattern_king_of_clubs.svg/1920px-English_pattern_king_of_clubs.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item52 {
+  background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/English_pattern_king_of_hearts.svg/1920px-English_pattern_king_of_hearts.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  background-color: darkgreen;
+  color: #fff;
+}
+
+#footer_img {
+  width:75px;
+  height: auto;
+}
+
+
